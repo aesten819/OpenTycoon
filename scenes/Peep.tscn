@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://peep_scene_001"]
+
+[ext_resource type="Script" path="res://scripts/Peep.gd" id="1_peep"]
+[ext_resource type="SpriteFrames" uid="uid://peep_frames_001" path="res://assets/peep/peep_frames.tres" id="2_frames"]
+
+[node name="Peep" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_peep")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_frames")
+animation = &"walk"
+frame_progress = 0.5
+offset = Vector2(0, -16)
+z_index = 5
