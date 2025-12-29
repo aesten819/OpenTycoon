@@ -52,7 +52,7 @@ if __name__ == "__main__":
         folder = os.path.dirname(target)
         filename = os.path.basename(target)
         name_no_ext = os.path.splitext(filename)[0]
-        output = os.path.join("assets/peep", "peep_walk.png") # Force output name for game consistency
+        output = os.path.join("assets/peep", "peep_walk_back.png") # Force output name for game consistency
         
         print(f"Targeting: {target} -> {output}")
         process_peep_walk(target, output)
